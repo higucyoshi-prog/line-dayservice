@@ -1,0 +1,25 @@
+{
+  "name": "line-dayservice",
+  "version": "1.0.0",
+  "description": "デイサービス向け LINE 公式アカウント運用支援ツール",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc --noEmit",
+    "setup-menu": "ts-node scripts/setupRichMenu.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.4.0",
+    "googleapis": "^140.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vercel/node": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

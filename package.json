@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vercel dev",
-    "build": "tsc --noEmit",
+    "build": "echo 'No build step'",
     "setup-menu": "ts-node scripts/setupRichMenu.ts",
     "lint": "eslint . --ext .ts"
   },

@@ -1,13 +1,14 @@
 {
   "version": 2,
   "builds": [
-    {"src": "api/webhook.ts", "use": "@vercel/node"},
-    {"src": "api/refresh.ts", "use": "@vercel/node"},
-    {"src": "api/setup-menu.ts", "use": "@vercel/node"}
+    { "src": "api/webhook.ts",    "use": "@vercel/node" },
+    { "src": "api/refresh.ts",    "use": "@vercel/node" },
+    { "src": "api/setup-menu.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    {"src": "/api/webhook", "dest": "/api/webhook.ts"},
-    {"src": "/api/refresh", "dest": "/api/refresh.ts"},
-    {"src": "/api/setup-menu", "dest": "/api/setup-menu.ts"}
+    { "src": "/api/webhook",    "dest": "/api/webhook.ts" },
+    { "src": "/api/refresh",    "dest": "/api/refresh.ts" },
+    { "src": "/api/setup-menu", "dest": "/api/setup-menu.ts" },
+    { "src": "/(.*)",           "dest": "/public/$1" }
   ]
 }

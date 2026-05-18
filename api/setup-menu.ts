@@ -29,10 +29,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       areas: [
         { bounds: { x: 0,   y: 0,   width: 400, height: 405 }, action: { type: "postback", label: "空き状況", data: "action=vacancy", displayText: "空き状況を確認" } },
         { bounds: { x: 400, y: 0,   width: 400, height: 405 }, action: { type: "uri", label: "予定表", uri: "https://line-dayservice.vercel.app/yotei.html" } },
-        { bounds: { x: 800, y: 0,   width: 400, height: 405 }, action: { type: "uri", label: "施設紹介", uri: "https://line-dayservice.vercel.app/shisetsu.html" } },
+        { bounds: { x: 800, y: 0,   width: 400, height: 405 }, action: { type: "uri", label: "施設紹介", uri: "https://nishimikawa-kaigo.jp/" } },
         { bounds: { x: 0,   y: 405, width: 400, height: 405 }, action: { type: "uri", label: "お問い合わせ", uri: "https://line-dayservice.vercel.app/contact.html" } },
         { bounds: { x: 400, y: 405, width: 400, height: 405 }, action: { type: "uri", label: "アクセス", uri: "https://maps.google.com/?q=愛知県刈谷市御幸町3-78" } },
-        { bounds: { x: 800, y: 405, width: 400, height: 405 }, action: { type: "uri", label: "採用情報", uri: "https://line-dayservice.vercel.app/recruit.html" } },
+        { bounds: { x: 800, y: 405, width: 400, height: 405 }, action: { type: "uri", label: "採用情報", uri: "https://nishimikawa-kaigo.jp/recruit" } },
       ],
     };
 

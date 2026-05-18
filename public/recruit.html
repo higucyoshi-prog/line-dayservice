@@ -2,9 +2,65 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>採用情報 | デイサービスおひさま</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #fffdf0; color: #333; }
+  header { background: #D4AC0D; color: #fff; padding: 20px; text-align: center; }
+  header h1 { font-size: 22px; font-weight: bold; }
+  header p  { font-size: 13px; margin-top: 6px; opacity: 0.9; }
+  .hero { background: linear-gradient(135deg, #D4AC0D, #F5C842); color: #fff; padding: 24px 20px; text-align: center; }
+  .hero h2 { font-size: 20px; margin-bottom: 8px; }
+  .hero p  { font-size: 14px; line-height: 1.7; }
+  .card { background: #fff; margin: 16px; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .card h2 { font-size: 16px; color: #D4AC0D; border-left: 4px solid #D4AC0D; padding-left: 10px; margin-bottom: 14px; }
+  .job { border: 1px solid #eee; border-radius: 8px; padding: 14px; margin-bottom: 12px; }
+  .job h3 { font-size: 15px; color: #333; margin-bottom: 10px; }
+  .job table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .job table td { padding: 6px 4px; border-bottom: 1px solid #f5f5f5; vertical-align: top; }
+  .job table td:first-child { color: #D4AC0D; font-weight: bold; width: 30%; }
+  .badge { display: inline-block; background: #D4AC0D; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-bottom: 8px; }
+  .btn-apply { display: block; text-align: center; background: #D4AC0D; color: #fff; padding: 16px; border-radius: 50px; font-size: 16px; font-weight: bold; text-decoration: none; margin: 8px 16px; }
+  .point-list { list-style: none; }
+  .point-list li { padding: 8px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+  .point-list li::before { content: "⭐ "; }
+  footer { text-align: center; padding: 20px; font-size: 12px; color: #999; }
+</style>
 </head>
 <body>
-<h1>採用情報</h1>
+<header>
+  <h1>👤 採用情報</h1>
+  <p>デイサービスおひさま</p>
+</header>
+<div class="hero">
+  <h2>一緒に働きませんか？</h2>
+  <p>利用者様の笑顔のために。<br>やりがいのある職場でお待ちしています。</p>
+</div>
+<div class="card">
+  <h2>職場の魅力</h2>
+  <ul class="point-list">
+    <li>アットホームな職場環境</li>
+    <li>未経験者歓迎・丁寧な研修あり</li>
+    <li>シフト制で働きやすい</li>
+    <li>資格取得支援制度あり</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>募集職種</h2>
+  <div class="job">
+    <span class="badge">募集中</span>
+    <h3>介護スタッフ（パート・アルバイト）</h3>
+    <table>
+      <tr><td>雇用形態</td><td>パート・アルバイト</td></tr>
+      <tr><td>給与</td><td>時給 1,000円〜</td></tr>
+      <tr><td>勤務時間</td><td>9:00〜17:00（シフト制）</td></tr>
+      <tr><td>勤務地</td><td>愛知県刈谷市御幸町3-78</td></tr>
+      <tr><td>資格</td><td>不問（介護資格があれば優遇）</td></tr>
+    </table>
+  </div>
+</div>
+<a href="tel:0566-00-0000" class="btn-apply">📞 お電話でお問い合わせ</a>
+<footer>デイサービスおひさま &copy; 2024</footer>
 </body>
 </html>

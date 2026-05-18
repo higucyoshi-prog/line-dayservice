@@ -2,9 +2,56 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>施設紹介 | デイサービスおひさま</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #f0f8ff; color: #333; }
+  header { background: #4A9FD5; color: #fff; padding: 20px; text-align: center; }
+  header h1 { font-size: 22px; font-weight: bold; }
+  header p  { font-size: 13px; margin-top: 6px; opacity: 0.9; }
+  .card { background: #fff; margin: 16px; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .card h2 { font-size: 16px; color: #4A9FD5; border-left: 4px solid #4A9FD5; padding-left: 10px; margin-bottom: 12px; }
+  .card p  { font-size: 14px; line-height: 1.8; color: #555; }
+  .feature-list { list-style: none; }
+  .feature-list li { padding: 8px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+  .feature-list li::before { content: "✅ "; }
+  .info-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .info-table td { padding: 10px 8px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+  .info-table td:first-child { color: #4A9FD5; font-weight: bold; width: 35%; }
+  footer { text-align: center; padding: 20px; font-size: 12px; color: #999; }
+</style>
 </head>
 <body>
-<h1>施設紹介</h1>
+<header>
+  <h1>🏠 施設紹介</h1>
+  <p>デイサービスおひさま</p>
+</header>
+<div class="card">
+  <h2>施設のご案内</h2>
+  <p>デイサービスおひさまは、利用者様が笑顔で過ごせるよう、スタッフ一同心を込めてサポートいたします。日常生活の支援から、レクリエーション、機能訓練まで、充実したサービスをご提供しています。</p>
+</div>
+<div class="card">
+  <h2>サービス内容</h2>
+  <ul class="feature-list">
+    <li>日常生活の介護・支援</li>
+    <li>入浴サービス</li>
+    <li>食事の提供（昼食・おやつ）</li>
+    <li>機能訓練・リハビリ</li>
+    <li>レクリエーション活動</li>
+    <li>送迎サービス</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>施設情報</h2>
+  <table class="info-table">
+    <tr><td>施設名</td><td>デイサービスおひさま</td></tr>
+    <tr><td>所在地</td><td>愛知県刈谷市御幸町3-78</td></tr>
+    <tr><td>営業時間</td><td>9:00〜17:00</td></tr>
+    <tr><td>定員</td><td>　名</td></tr>
+    <tr><td>対象者</td><td>要介護認定を受けた方</td></tr>
+  </table>
+</div>
+<footer>デイサービスおひさま &copy; 2024</footer>
 </body>
 </html>

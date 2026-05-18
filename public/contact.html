@@ -2,9 +2,47 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>お問い合わせ | デイサービスおひさま</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #f0fff0; color: #333; }
+  header { background: #5CB85C; color: #fff; padding: 20px; text-align: center; }
+  header h1 { font-size: 22px; font-weight: bold; }
+  header p  { font-size: 13px; margin-top: 6px; opacity: 0.9; }
+  .card { background: #fff; margin: 16px; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .card h2 { font-size: 16px; color: #5CB85C; border-left: 4px solid #5CB85C; padding-left: 10px; margin-bottom: 16px; }
+  .btn { display: block; text-align: center; padding: 16px; border-radius: 50px; font-size: 18px; font-weight: bold; text-decoration: none; margin: 12px 0; }
+  .btn-tel  { background: #5CB85C; color: #fff; }
+  .btn-line { background: #06C755; color: #fff; }
+  .note { font-size: 13px; color: #888; text-align: center; margin-top: 8px; }
+  .hours { background: #f9f9f9; border-radius: 8px; padding: 14px; font-size: 14px; }
+  .hours p { margin: 6px 0; color: #555; }
+  footer { text-align: center; padding: 20px; font-size: 12px; color: #999; }
+</style>
 </head>
 <body>
-<h1>お問い合わせ</h1>
+<header>
+  <h1>📞 お問い合わせ</h1>
+  <p>デイサービスおひさま</p>
+</header>
+<div class="card">
+  <h2>お電話でのお問い合わせ</h2>
+  <a href="tel:0566-00-0000" class="btn btn-tel">📞 0566-00-0000</a>
+  <p class="note">タップするとそのままお電話できます</p>
+</div>
+<div class="card">
+  <h2>LINEでのお問い合わせ</h2>
+  <a href="https://line.me/ti/p/@ohisama" class="btn btn-line">💬 LINEでメッセージを送る</a>
+  <p class="note">このページからそのままトークできます</p>
+</div>
+<div class="card">
+  <h2>受付時間</h2>
+  <div class="hours">
+    <p>📅 月〜土曜日：9:00〜17:00</p>
+    <p>🚫 日曜・祝日はお休みです</p>
+  </div>
+</div>
+<footer>デイサービスおひさま &copy; 2024</footer>
 </body>
 </html>

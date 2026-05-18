@@ -2,9 +2,32 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>予定表 | デイサービスおひさま</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: #FFF9F0; color: #333; }
+  header { background: #F5A623; color: #fff; padding: 16px 20px; text-align: center; }
+  header h1 { font-size: 20px; font-weight: bold; }
+  header p  { font-size: 13px; margin-top: 4px; opacity: 0.9; }
+  .notice { background: #fff3cd; border-left: 4px solid #F5A623; padding: 12px 16px; margin: 16px; font-size: 14px; border-radius: 4px; }
+  iframe { width: 100%; border: none; display: block; }
+  footer { text-align: center; padding: 16px; font-size: 12px; color: #999; }
+</style>
 </head>
 <body>
-<h1>予定表</h1>
+<header>
+  <h1>📋 月間予定表</h1>
+  <p>デイサービスおひさま</p>
+</header>
+<div class="notice">
+  ※ 予定は変更になる場合があります。詳しくはお電話でご確認ください。
+</div>
+<iframe
+  src="https://calendar.google.com/calendar/embed?src=ja.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo&hl=ja&mode=MONTH"
+  height="550"
+  scrolling="no">
+</iframe>
+<footer>デイサービスおひさま &copy; 2024</footer>
 </body>
 </html>

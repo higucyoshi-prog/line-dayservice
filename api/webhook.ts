@@ -12,7 +12,7 @@ interface DayVacancy { day: string; status: VacancyStatus; remaining: number; no
 interface VacancyData { days: DayVacancy[]; updatedAt: string; }
  
 // ── キャッシュ ───────────────────────────────────────────────────
-let cachedVacancy: VacancyData | null = null;
+let cachedVacancy: VacancyData | null = null;h
 let cacheExpiresAt = 0;
 const CACHE_TTL_MS = 5 * 60 * 1000;
 export function invalidateCache() { cachedVacancy = null; cacheExpiresAt = 0; }
@@ -29,7 +29,9 @@ async function fetchVacancyData(): Promise<VacancyData> {
   const rows = res.data.values ?? [];
   const days: DayVacancy[] = rows.filter(r => r[0] && r[1]).map(r => {
     const raw = String(r[1] ?? "").trim();
-    const status: VacancyStatus = raw === "◯" || raw === "○" ? "◯" : raw === "△" || raw === "▲" ? "△" : "×";
+        const isCircle = ["◯", "○", "〇", "O", "Ｏ"].includes(raw);
+       const isTriangle = ["△", "▲"].includes(raw);
+       const status: VacancyStatus = isCircle ? "◯" : isTriangle ? "△" : "×";
     const remaining = parseInt(String(r[2] ?? "0"), 10);
     return { day: String(r[0]).trim(), status, remaining: isNaN(remaining) ? 0 : remaining, note: r[3] ? String(r[3]).trim() : undefined };
   });
